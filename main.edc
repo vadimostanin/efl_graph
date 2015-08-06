@@ -1,0 +1,70 @@
+collections
+{
+	group
+	{
+		name:"main_layout";
+		parts
+		{
+			part
+			{
+				name:"part.toolbar_layout.bg";
+				type: RECT;
+				description
+				{
+					color : 64 64 64 128;
+					rel1
+                    {
+                        relative: 0.0 0.0;
+                    }
+                    rel2
+                    {
+                        relative: 1.0 1.0;
+                    }
+				}
+			}
+			part
+			{
+				name:"part.main.graphs";
+				type: SWALLOW;
+				
+				description
+				{
+					state: "default" 0.0;
+					rel1
+                    {
+                        relative: 0.0 0.0;
+                    }
+                    rel2
+                    {
+                        relative: 1.0 1.0;
+                    }
+                }
+			}
+		}
+	}
+	group
+	{
+		name:"group.graphs_layout";
+		parts
+		{
+			part
+			{
+				name:"part.graphs_layout.main_box";
+				type: SWALLOW;
+				description
+				{
+					color : 0 255 0 255;
+					align: 0.0 0.0;
+					rel1
+	                {
+	                    relative: 0.0 0.0;
+	                }
+	                rel2
+	                {
+	                    relative: 1.0 1.0;
+	                }
+				}
+			}
+		}
+	}
+}
